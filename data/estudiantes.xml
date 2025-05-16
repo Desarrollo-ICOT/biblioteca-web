@@ -1,0 +1,12 @@
+<students>
+  <student>
+    <id>1</id>
+    <name>Ana Pérez</name>
+    <borrowedBooks>2</borrowedBooks>
+  </student>
+  <student>
+    <id>2</id>
+    <name>Juan Ruiz</name>
+    <borrowedBooks>1</borrowedBooks>
+  </student>
+</students>
