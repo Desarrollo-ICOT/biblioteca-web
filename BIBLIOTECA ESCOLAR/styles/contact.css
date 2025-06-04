@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*<weight>: Use a value from 100 to 900*/
+
+* {
+    font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+}
+
+/**COLORES
+ffffff
+faf9f7
+ba0c2f
+eee9dd
+c00121
+b60017
+b30926
+b11c2f - Color del logo
+000000
+*/
+
+/*LOGO MENÚ DE NAVEGACIÓN*/
+.logo img {
+    width: 150px; 
+    height: 100px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+#top {
+	background-color: #b11c2f;
+	color: #fff;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	gap: 1000px;
+}
+
+#top img {
+	height: 30px;
+    width: 30px;
+	margin-top: 10px;
+}
+
+#social-networks {
+	margin-top: 10px;
+}
+
+.top-nav {
+	background-color: #fff;
+	display: flex;
+}
+
+.top-nav ul li a {
+	color: #000000;
+	padding: 0.1em 1em;
+	font-size: 1.2em;
+}
+
+.top-nav ul li.contatct-active a {
+	border:2px solid #394346;
+	border-radius:5px;
+}
+
+.top-nav ul li.contatct-active a:hover {
+	border-color: #b11c2f ;
+	color:#000000;
+}
+
+.top-nav ul li a:hover {
+	color: #b11c2f;
+}
+
+.logo a {
+	display:block;
+}
+
+nav ul {
+	margin: 2.2em 0;
+	margin-left: 450px;
+}
+
+nav li {
+	display: inline;
+	position: relative;
+}
+
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+/*ESTILO PARA LAS LÍNEAS*/
+hr {
+	color: #eee9dd;
+	background-color: #eee9dd;
+	border: none; 
+	height: 2px;
+}
+
+/*FORMULARIO*/
+form {
+	margin-top: 20px;
+}
+
+input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	background-color: #b11c2f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+input[type="submit"]:hover {
+	background-color: #b11c2f;
+}
+
+#lineasfinas hr {
+	color: #394346;
+	background-color: #394346;
+	height: 1px;
+}
+
+/*FORMULARIO DE CONTACTO*/
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  border: 2px solid #394346;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #c78023;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkbox-container a {
+  color: #b11c2f;
+  text-decoration: none;
+}
+
+input[type="submit"]:active {
+  background-color: #b11c2f;
+}
+
+/*MODO OSCURO*/
+.dark-mode {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+
+}
+
+.dark-mode .top-nav {
+	background-color: black;
+}
+
+.dark-mode .top-nav a {
+	color: white;
+}
+
+.dark-mode .forms {
+	background-color: black;
+	color: white;
+	box-shadow: white;
+}
+
+button {
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 14px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/*PIE DE PÁGINA*/
+footer {
+	text-align: center;
+	color: white;
+	background-color: #222222;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	margin-top: 30px;
+	overflow-x: hidden;
+}
+
+footer .foot a{
+	text-decoration: none;
+	transition: 0.5s;
+	color: #ffffff;
+}
+
+footer .foot ul {
+	width: 100%;
+}
+
+footer .foot ul li {
+	display: inline-block;
+	margin: 0px 30px;
+}
+
+footer .foot a li {
+	font-size: 2em;
+	margin: 0% 1%;
+}
+
+footer li a:hover {
+  color: #b11c2f;
+}
+
+footer li a::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #b11c2f;
+  transition: width 0.3s ease;
+}

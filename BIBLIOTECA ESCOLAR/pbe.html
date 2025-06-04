@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="shortcut icon" href="imgs/faviconicot.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/BIBLIOTECA ESCOLAR/styles/style.css">
+    <link rel="stylesheet" href="/BIBLIOTECA ESCOLAR/styles/responsive.css">
+    <script src="../BIBLIOTECA ESCOLAR/scripts/darkmode.js"></script>
+</head>
+<body>
+    <header>
+        <!--LOGO DE ICOT-->
+        <!--MENÚ DE NAVEGACIÓN-->
+        <nav id="top">
+            <h4>Contáctanos por email: policlinico@grupoicot.es - santacruz@grupoicot.es</h4>
+            <div id="social-networks">
+                <a href="https://www.youtube.com/@grupo-icot/featured"><img src="/BIBLIOTECA ESCOLAR/imgs/youtube.png" alt="logo-youtube"></a>
+                <a href="https://www.facebook.com/grupoicot"><img src="/BIBLIOTECA ESCOLAR/imgs/facebook.png" alt="logo-facebook"></a>
+                <a href="https://www.linkedin.com/company/grupo-icot"><img src="/BIBLIOTECA ESCOLAR/imgs/linkedin.png" alt="logo-linkedin"></a>
+                <a href="https://www.instagram.com/grupoicot/"><img src="/BIBLIOTECA ESCOLAR/imgs/instagram.png" alt="logo-instagram"></a>
+                <button onclick="darkmode()">🌙 | ☀️</button>
+            </div>
+        </nav>
+        <nav class="top-nav">
+            <div class="logo">
+                <a href="/BIBLIOTECA ESCOLAR/pbe.html"><img src="imgs/logoicot.png" title="logo-icot"/></a>
+            </div>
+            <ul>
+                <li class="page-scroll"><a href="/BIBLIOTECA ESCOLAR/pbe.html" class="scroll">INICIO</a></li>
+                <li class="page-scroll"><a target="_blank" href="/BIBLIOTECA ESCOLAR/MANUAL DE USUARIO.pdf" class="scroll">TUTORIAL</a></li>
+                <li class="page-scroll"><a href="/BIBLIOTECA ESCOLAR/contact/contact.html" class="scroll">CONTACTO</a></li>
+            </ul>        
+            </nav>
+            <hr>
+    </header>
+        <br>
+        <div class="catalogo-libros">
+        <section id="catalogo">
+            <h1>CATÁLOGO DE LIBROS</h1>
+            <div id="libros-container">
+            </div>
+        </div>
+            <section id="prestamos">
+                <div class="forms" method="get">
+                    <h1>REGISTRAR PRÉSTAMO</h1>
+                    <form action="#"> 
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí el nombre del estudiante" required>
+                    <input type="text" id="libro" name="titulo" placeholder="Escriba aquí el título del libro" required>
+                    <input type="submit" value="AÑADIR">
+                    </form>
+                    <div id="prestamos-container"></div>
+                </div>
+            </section>
+            <br>
+            <section id="students">
+            <div class="forms">
+            <h1>ESTUDIANTES</h1>
+                <form action="#" method="get">
+                    <input onclick="students()" type="button" value="CARGAR DESDE EL XML">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOMBRE</th>
+                            <th>APELLIDOS</th>
+                            <th>FECHA NACIMIENTO</th>
+                            <th>CORREO</th>
+                        </tr>
+                        </thead>
+                        <tbody id="students-table">
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            </section>
+            <div class="ibot">
+                <div class="title">IBOT</div>
+                <div class="messages"></div>
+                <div class="input">
+                    <input type="text" placeholder="Escriba su pregunta">
+                    <button class="button">OK</button>
+                </div>
+            </div>
+                <footer>
+                    <div class="foot">
+                        <ul>
+                        <li><a href="/contact/contact.html">Contacto</a></li>
+                        <li><a href="https://www.grupoicot.es/aviso-legal/">Aviso legal</a></li>
+                        <li><a href="https://www.grupoicot.es/politica-de-privacidad/">Política de privacidad</a></li>
+                        <li><a href="https://www.grupoicot.es/politica-de-cookies/">Política de cookies</a></li>
+                        <li><a href="https://www.grupoicot.es/politicas-de-compliance/">Compliance y canal ético</a></li>
+                        </ul>
+                        Copyright © 2025 - Todos los derechos reservados
+                    </div>
+                </footer>
+        <script src="/BIBLIOTECA ESCOLAR/scripts/pbe.js"></script>
+</body>
+</html>

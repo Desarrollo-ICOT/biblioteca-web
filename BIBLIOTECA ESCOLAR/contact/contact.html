@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="shortcut icon" href="../imgs/faviconicot.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/BIBLIOTECA ESCOLAR/styles/contact.css">
+    <link rel="stylesheet" href="/BIBLIOTECA ESCOLAR/styles/responsive.css">
+    <script src="../scripts/darkmode.js"></script>
+</head>
+<body>
+    <header>
+        <!--LOGO DE ICOT-->
+        <!--MENÚ DE NAVEGACIÓN-->
+        <nav id="top">
+            <h4>Contáctanos por email: policlinico@grupoicot.es - santacruz@grupoicot.es</h4>
+            <div id="social-networks">
+                <a href="https://www.youtube.com/@grupo-icot/featured"><img src="/BIBLIOTECA ESCOLAR/imgs/youtube.png" alt="logo-youtube"></a>
+                <a href="https://www.facebook.com/grupoicot"><img src="/BIBLIOTECA ESCOLAR/imgs/facebook.png" alt="logo-facebook"></a>
+                <a href="https://www.linkedin.com/company/grupo-icot"><img src="/BIBLIOTECA ESCOLAR/imgs/linkedin.png" alt="logo-linkedin"></a>
+                <a href="https://www.instagram.com/grupoicot/"><img src="/BIBLIOTECA ESCOLAR/imgs/instagram.png" alt="logo-instagram"></a>
+                <button onclick="darkmode()">🌙 | ☀️</button>
+                </div>
+        </nav>
+        <nav class="top-nav">
+            <div class="logo">
+                <a href="/pbe.html"><img src="/BIBLIOTECA ESCOLAR/imgs/logoicot.png" title="logo-icot"/></a>
+            </div>
+            <ul>
+                <li class="active"><a href="/BIBLIOTECA ESCOLAR/pbe.html" class="scroll">INICIO</a></li>
+                <li class="page-scroll"><a target="_blank" href="/BIBLIOTECA ESCOLAR/MANUAL DE USUARIO.pdf" class="scroll">TUTORIAL</a></li>
+                <li class="page-scroll"><a href="/BIBLIOTECA ESCOLAR/contact/contact.html" class="scroll">CONTACTO</a></li>
+            </ul>        
+            </nav>
+            <hr>
+    </header>
+    <form method="POST">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje"></textarea><br />
+        <label class="checkbox-container">
+        <input type="checkbox" name="privacidad" required>
+        Acepto la <a href="https://www.grupoicot.es/politica-de-privacidad/" target="_blank" rel="noopener noreferrer">política de privacidad</a>
+        </label>
+        <input type="submit" value="ENVIAR" />
+    </form>
+      <footer>
+        <div class="foot">
+            <ul>
+            <li><a href="/BIBLIOTECA ESCOLAR/contact/contact.html">Contacto</a></li>
+            <li><a href="https://www.grupoicot.es/aviso-legal/">Aviso legal</a></li>
+            <li><a href="https://www.grupoicot.es/politica-de-privacidad/">Política de privacidad</a></li>
+            <li><a href="https://www.grupoicot.es/politica-de-cookies/">Política de cookies</a></li>
+            <li><a href="https://www.grupoicot.es/politicas-de-compliance/">Compliance y canal ético</a></li>
+            </ul>
+            Copyright © 2025 - All rights reserved
+        </div>
+    </footer>
+</body>
+</html>

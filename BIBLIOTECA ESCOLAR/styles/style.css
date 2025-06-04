@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*<weight>: Use a value from 100 to 900*/
+
+* {
+    font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+}
+
+/**COLORES
+ffffff
+faf9f7
+ba0c2f
+eee9dd
+c00121
+b60017
+b30926
+b11c2f - Color del logo
+000000
+*/
+
+/*LOGO MENÚ DE NAVEGACIÓN*/
+.logo img {
+    width: 150px; 
+    height: 100px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+#top {
+	background-color: #b11c2f;
+	color: #fff;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	gap: 800px;
+}
+
+#top img {
+	height: 30px;
+    width: 30px;
+	margin-top: 10px;
+}
+
+#social-networks {
+	margin-top: 10px;
+}
+
+.top-nav {
+	background-color: #fff;
+	display: flex;
+}
+
+.top-nav ul li a {
+	color: #000000;
+	padding: 0.1em 1em;
+	font-size: 1.2em;
+}
+
+.top-nav ul li.contatct-active a {
+	border: 2px solid #394346;
+	border-radius: 5px;
+}
+
+.top-nav ul li.contatct-active a:hover {
+	border-color: #b11c2f ;
+	color:#000000;
+}
+
+.top-nav ul li a:hover {
+	color: #b11c2f;
+}
+
+.logo a {
+	display:block;
+}
+
+nav ul {
+	margin: 2.2em 0;
+	margin-left: 450px;
+}
+
+nav li {
+	display: inline;
+	position: relative;
+}
+
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+/*ESTILO PARA LAS LÍNEAS*/
+hr {
+	color: #eee9dd;
+	background-color: #eee9dd;
+	border: none; 
+	height: 2px;
+}
+
+/*FORMULARIO*/
+form {
+	margin-top: 20px;
+}
+
+.forms {
+	max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.forms h1 {
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 97.8%;
+	padding: 10px;
+	border: 1px solid #394346;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	background-color: #b11c2f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+input[type="submit"]:hover {
+	background-color: #c78023;
+}
+
+input[type="button"] {
+	width: 100%;
+	background-color: #b11c2f;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+input[type="button"]:hover {
+	background-color: #c78023;
+}
+
+#lineasfinas hr {
+	color: #394346;
+	background-color: #394346;
+	border: none; 
+	height: 1px;
+}
+
+/*MODO OSCURO*/
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .top-nav {
+	background-color: black;
+}
+
+.dark-mode .top-nav a {
+	color: white;
+}
+
+.dark-mode .forms {
+	background-color: black;
+	color: white;
+	border: 1px solid #ccc;
+	box-shadow: white;
+}
+
+.dark-mode .messages{
+	background-color: black;
+	transition: 0.4s;
+}
+
+button {
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 14px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.dark-mode .catalogo-libros {
+  color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .disponible {
+  background-color: #4f772d;
+}
+
+.dark-mode .no-disponible {
+  background-color: #c00121;
+}
+
+/*ESTILO PARA EL CATÁLOGO DE LOS LIBROS*/
+#libros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 3%;
+  margin-left: 10%;
+}
+
+.catalogo-libros {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.catalogo-libros button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.catalogo-libros button:hover {
+  background-color: #b11c2f;
+  transition: 0.7s;
+}
+
+/*ESTILO PARA EL REGISTRO DE LOS PRÉSTAMOS*/
+.tarjeta-libro {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  width: 200px;
+}
+
+.disponible {
+  background-color: #c7f9cc;
+}
+
+.no-disponible {
+  background-color: #ced4da;
+}
+
+.tarjeta-prestamo {
+  border: 1px solid #aaa;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.tarjeta-prestamo button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0%;
+}
+
+.tarjeta-prestamo button:hover {
+  background-color: #b11c2f;
+  transition: 0.7s;
+}
+
+/*ESTILO PARA LA TABLA DEL XML*/
+table {
+	width: 100%;
+	text-align: center;
+	margin-top: 3%;
+}
+
+table, th, td {
+	border: 1px solid #394346;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th {
+	background-color: #c78023;
+	color: white;
+}
+
+/*IBOT*/
+.ibot {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 280px;
+	background: white;
+	border: 1px solid #c78023;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.title {
+	background-color: #b11c2f;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.messages {
+	height: 200px;
+	background: white;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.messages p {
+	margin: 6px 0;
+}
+
+.input {
+	display: flex;
+	border-top: 1px solid white;
+	margin-left: 3px;
+}
+
+.input button {
+	padding: 10px;
+	background-color: #b11c2f;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+/*PIE DE PÁGINA*/
+footer {
+	text-align: center;
+	color: white;
+	background-color: #222222;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	margin-top: 30px;
+  	overflow-x: hidden;
+}
+
+footer .foot a{
+	text-decoration: none;
+	transition: 0.5s;
+	color: #ffffff;
+}
+
+footer .foot ul {
+	width: 100%;
+}
+
+footer .foot ul li {
+	display: inline-block;
+	margin: 0px 30px;
+}
+
+footer .foot a li {
+	font-size: 2em;
+	margin: 0% 1%;
+}
+
+footer li a:hover {
+  color: #b11c2f;
+}
+
+footer li a::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #b11c2f;
+  transition: width 0.3s ease;
+}
